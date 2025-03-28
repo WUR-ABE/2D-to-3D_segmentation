@@ -38,7 +38,7 @@ conda create --name 2dto3d python==
 
 **Training
 For training we recommend the docker. Note that the visualisation does not work for devcontainer.
-Make sure your docker environment containts the nvidia docker to get acces to your gpu. It can take a up to 60 minutes (because of flash attention installation)
+Make sure your docker environment containts the nvidia docker to get acces to your gpu. It can take a up to 2 hours to install (because of flash attention installation is time intensive)
 
 ```
 docker compose build

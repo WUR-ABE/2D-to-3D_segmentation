@@ -1,0 +1,43 @@
+services:
+  interactive:
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    restart: no
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    shm_size: '8gb'
+    working_dir: /workspace/plant3d
+    volumes:
+      # mount current directory, so changes in the host are reflected in the container
+      - type: bind
+        source: "."
+        target: "/workspace/plant3d"
+      # mount your dataset directory
+      # - type: bind
+      #   source: "/home/agro/w-drive-vision/GARdata"
+      #   target: "/mnt/GARData"
+      # - type: bind
+      #   source: "${HOME}/.darwin"
+      #   target: "/home/containerUser/.darwin"
+      # mount to enable using display
+      # might change based on host os; disable when this gives errors
+      - type: bind
+        source: "/tmp/.X11-unix"
+        target: "/tmp/.X11-unix"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    # user: "containerUser"
+    network_mode: host
+    # env_file:
+    #   - .env
+    environment:
+      # environment variables to enable using display
+      # might change based on host os; disable when this gives errors 
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
