@@ -1,0 +1,83 @@
+[2024-11-30 10:50:16,494 INFO test.py line 41 2988] => Loading config ...
+[2024-11-30 10:50:16,495 INFO test.py line 48 2988] => Building model ...
+[2024-11-30 10:50:16,678 INFO test.py line 61 2988] Num params: 46166532
+[2024-11-30 10:50:16,763 INFO test.py line 68 2988] Loading weight at: example_configs/20240516_2022_ptv3_pretrained_default_lr_model_best.pth
+[2024-11-30 10:50:17,028 INFO test.py line 80 2988] => Loaded weight 'example_configs/20240516_2022_ptv3_pretrained_default_lr_model_best.pth' (epoch 32)
+[2024-11-30 10:50:17,030 INFO test.py line 53 2988] => Building test dataset & dataloader ...
+[2024-11-30 10:50:17,030 INFO marvindata_csv.py line 92 2988] Totally 5 x 1 samples in train set.
+[2024-11-30 10:50:17,030 INFO test.py line 119 2988] >>>>>>>>>>>>>>>> Start Evaluation >>>>>>>>>>>>>>>>
+[2024-11-30 10:50:18,476 INFO test.py line 196 2988] Test: 1/5-Harvest_01_PotNr_429, Batch: 0/13
+[2024-11-30 10:50:18,519 INFO test.py line 196 2988] Test: 1/5-Harvest_01_PotNr_429, Batch: 1/13
+[2024-11-30 10:50:18,563 INFO test.py line 196 2988] Test: 1/5-Harvest_01_PotNr_429, Batch: 2/13
+[2024-11-30 10:50:18,608 INFO test.py line 196 2988] Test: 1/5-Harvest_01_PotNr_429, Batch: 3/13
+[2024-11-30 10:50:18,651 INFO test.py line 196 2988] Test: 1/5-Harvest_01_PotNr_429, Batch: 4/13
+[2024-11-30 10:50:18,750 INFO test.py line 196 2988] Test: 1/5-Harvest_01_PotNr_429, Batch: 5/13
+[2024-11-30 10:50:18,793 INFO test.py line 196 2988] Test: 1/5-Harvest_01_PotNr_429, Batch: 6/13
+[2024-11-30 10:50:18,836 INFO test.py line 196 2988] Test: 1/5-Harvest_01_PotNr_429, Batch: 7/13
+[2024-11-30 10:50:18,879 INFO test.py line 196 2988] Test: 1/5-Harvest_01_PotNr_429, Batch: 8/13
+[2024-11-30 10:50:18,927 INFO test.py line 196 2988] Test: 1/5-Harvest_01_PotNr_429, Batch: 9/13
+[2024-11-30 10:50:18,971 INFO test.py line 196 2988] Test: 1/5-Harvest_01_PotNr_429, Batch: 10/13
+[2024-11-30 10:50:19,015 INFO test.py line 196 2988] Test: 1/5-Harvest_01_PotNr_429, Batch: 11/13
+[2024-11-30 10:50:19,057 INFO test.py line 196 2988] Test: 1/5-Harvest_01_PotNr_429, Batch: 12/13
+[2024-11-30 10:50:19,121 INFO test.py line 230 2988] Test: Harvest_01_PotNr_429 [1/5]-271233 Batch 1.007 (1.007) Accuracy 0.9721 (0.9217) mIoU 0.8353 (0.8353)
+[2024-11-30 10:50:19,176 INFO test.py line 196 2988] Test: 2/5-Harvest_02_PotNr_240, Batch: 0/12
+[2024-11-30 10:50:19,231 INFO test.py line 196 2988] Test: 2/5-Harvest_02_PotNr_240, Batch: 1/12
+[2024-11-30 10:50:19,285 INFO test.py line 196 2988] Test: 2/5-Harvest_02_PotNr_240, Batch: 2/12
+[2024-11-30 10:50:19,339 INFO test.py line 196 2988] Test: 2/5-Harvest_02_PotNr_240, Batch: 3/12
+[2024-11-30 10:50:19,394 INFO test.py line 196 2988] Test: 2/5-Harvest_02_PotNr_240, Batch: 4/12
+[2024-11-30 10:50:19,481 INFO test.py line 196 2988] Test: 2/5-Harvest_02_PotNr_240, Batch: 5/12
+[2024-11-30 10:50:19,531 INFO test.py line 196 2988] Test: 2/5-Harvest_02_PotNr_240, Batch: 6/12
+[2024-11-30 10:50:19,583 INFO test.py line 196 2988] Test: 2/5-Harvest_02_PotNr_240, Batch: 7/12
+[2024-11-30 10:50:19,634 INFO test.py line 196 2988] Test: 2/5-Harvest_02_PotNr_240, Batch: 8/12
+[2024-11-30 10:50:19,686 INFO test.py line 196 2988] Test: 2/5-Harvest_02_PotNr_240, Batch: 9/12
+[2024-11-30 10:50:19,752 INFO test.py line 196 2988] Test: 2/5-Harvest_02_PotNr_240, Batch: 10/12
+[2024-11-30 10:50:19,802 INFO test.py line 196 2988] Test: 2/5-Harvest_02_PotNr_240, Batch: 11/12
+[2024-11-30 10:50:19,906 INFO test.py line 230 2988] Test: Harvest_02_PotNr_240 [2/5]-396147 Batch 0.784 (0.896) Accuracy 0.9454 (0.8696) mIoU 0.7236 (0.7653)
+[2024-11-30 10:50:19,983 INFO test.py line 196 2988] Test: 3/5-Harvest_02_PotNr_27, Batch: 0/14
+[2024-11-30 10:50:20,050 INFO test.py line 196 2988] Test: 3/5-Harvest_02_PotNr_27, Batch: 1/14
+[2024-11-30 10:50:20,116 INFO test.py line 196 2988] Test: 3/5-Harvest_02_PotNr_27, Batch: 2/14
+[2024-11-30 10:50:20,180 INFO test.py line 196 2988] Test: 3/5-Harvest_02_PotNr_27, Batch: 3/14
+[2024-11-30 10:50:20,244 INFO test.py line 196 2988] Test: 3/5-Harvest_02_PotNr_27, Batch: 4/14
+[2024-11-30 10:50:20,308 INFO test.py line 196 2988] Test: 3/5-Harvest_02_PotNr_27, Batch: 5/14
+[2024-11-30 10:50:20,370 INFO test.py line 196 2988] Test: 3/5-Harvest_02_PotNr_27, Batch: 6/14
+[2024-11-30 10:50:20,443 INFO test.py line 196 2988] Test: 3/5-Harvest_02_PotNr_27, Batch: 7/14
+[2024-11-30 10:50:20,507 INFO test.py line 196 2988] Test: 3/5-Harvest_02_PotNr_27, Batch: 8/14
+[2024-11-30 10:50:20,571 INFO test.py line 196 2988] Test: 3/5-Harvest_02_PotNr_27, Batch: 9/14
+[2024-11-30 10:50:20,639 INFO test.py line 196 2988] Test: 3/5-Harvest_02_PotNr_27, Batch: 10/14
+[2024-11-30 10:50:20,707 INFO test.py line 196 2988] Test: 3/5-Harvest_02_PotNr_27, Batch: 11/14
+[2024-11-30 10:50:20,774 INFO test.py line 196 2988] Test: 3/5-Harvest_02_PotNr_27, Batch: 12/14
+[2024-11-30 10:50:20,841 INFO test.py line 196 2988] Test: 3/5-Harvest_02_PotNr_27, Batch: 13/14
+[2024-11-30 10:50:20,950 INFO test.py line 230 2988] Test: Harvest_02_PotNr_27 [3/5]-481051 Batch 1.044 (0.945) Accuracy 0.9702 (0.8675) mIoU 0.7942 (0.7759)
+[2024-11-30 10:50:20,991 INFO test.py line 196 2988] Test: 4/5-Harvest_01_PotNr_179, Batch: 0/12
+[2024-11-30 10:50:21,031 INFO test.py line 196 2988] Test: 4/5-Harvest_01_PotNr_179, Batch: 1/12
+[2024-11-30 10:50:21,071 INFO test.py line 196 2988] Test: 4/5-Harvest_01_PotNr_179, Batch: 2/12
+[2024-11-30 10:50:21,111 INFO test.py line 196 2988] Test: 4/5-Harvest_01_PotNr_179, Batch: 3/12
+[2024-11-30 10:50:21,151 INFO test.py line 196 2988] Test: 4/5-Harvest_01_PotNr_179, Batch: 4/12
+[2024-11-30 10:50:21,190 INFO test.py line 196 2988] Test: 4/5-Harvest_01_PotNr_179, Batch: 5/12
+[2024-11-30 10:50:21,231 INFO test.py line 196 2988] Test: 4/5-Harvest_01_PotNr_179, Batch: 6/12
+[2024-11-30 10:50:21,270 INFO test.py line 196 2988] Test: 4/5-Harvest_01_PotNr_179, Batch: 7/12
+[2024-11-30 10:50:21,308 INFO test.py line 196 2988] Test: 4/5-Harvest_01_PotNr_179, Batch: 8/12
+[2024-11-30 10:50:21,349 INFO test.py line 196 2988] Test: 4/5-Harvest_01_PotNr_179, Batch: 9/12
+[2024-11-30 10:50:21,389 INFO test.py line 196 2988] Test: 4/5-Harvest_01_PotNr_179, Batch: 10/12
+[2024-11-30 10:50:21,438 INFO test.py line 196 2988] Test: 4/5-Harvest_01_PotNr_179, Batch: 11/12
+[2024-11-30 10:50:21,506 INFO test.py line 230 2988] Test: Harvest_01_PotNr_179 [4/5]-254402 Batch 0.556 (0.848) Accuracy 0.9640 (0.8750) mIoU 0.8190 (0.7855)
+[2024-11-30 10:50:21,560 INFO test.py line 196 2988] Test: 5/5-Harvest_02_PotNr_166, Batch: 0/12
+[2024-11-30 10:50:21,615 INFO test.py line 196 2988] Test: 5/5-Harvest_02_PotNr_166, Batch: 1/12
+[2024-11-30 10:50:21,671 INFO test.py line 196 2988] Test: 5/5-Harvest_02_PotNr_166, Batch: 2/12
+[2024-11-30 10:50:21,724 INFO test.py line 196 2988] Test: 5/5-Harvest_02_PotNr_166, Batch: 3/12
+[2024-11-30 10:50:21,777 INFO test.py line 196 2988] Test: 5/5-Harvest_02_PotNr_166, Batch: 4/12
+[2024-11-30 10:50:21,830 INFO test.py line 196 2988] Test: 5/5-Harvest_02_PotNr_166, Batch: 5/12
+[2024-11-30 10:50:21,884 INFO test.py line 196 2988] Test: 5/5-Harvest_02_PotNr_166, Batch: 6/12
+[2024-11-30 10:50:21,947 INFO test.py line 196 2988] Test: 5/5-Harvest_02_PotNr_166, Batch: 7/12
+[2024-11-30 10:50:22,001 INFO test.py line 196 2988] Test: 5/5-Harvest_02_PotNr_166, Batch: 8/12
+[2024-11-30 10:50:22,055 INFO test.py line 196 2988] Test: 5/5-Harvest_02_PotNr_166, Batch: 9/12
+[2024-11-30 10:50:22,108 INFO test.py line 196 2988] Test: 5/5-Harvest_02_PotNr_166, Batch: 10/12
+[2024-11-30 10:50:22,160 INFO test.py line 196 2988] Test: 5/5-Harvest_02_PotNr_166, Batch: 11/12
+[2024-11-30 10:50:22,259 INFO test.py line 230 2988] Test: Harvest_02_PotNr_166 [5/5]-374949 Batch 0.752 (0.829) Accuracy 0.9485 (0.8670) mIoU 0.7205 (0.7727)
+[2024-11-30 10:50:22,291 INFO test.py line 289 2988] Syncing ...
+[2024-11-30 10:50:22,291 INFO test.py line 317 2988] Val result: mIoU/mAcc/allAcc 0.7727/0.8670/0.9595
+[2024-11-30 10:50:22,291 INFO test.py line 323 2988] Class_0 - leaves Result: iou/accuracy 0.9681/0.9850
+[2024-11-30 10:50:22,291 INFO test.py line 323 2988] Class_1 - main_stem Result: iou/accuracy 0.6984/0.7617
+[2024-11-30 10:50:22,291 INFO test.py line 323 2988] Class_2 - pole Result: iou/accuracy 0.7401/0.9110
+[2024-11-30 10:50:22,291 INFO test.py line 323 2988] Class_3 - side_stem Result: iou/accuracy 0.6843/0.8105
+[2024-11-30 10:50:22,291 INFO test.py line 331 2988] <<<<<<<<<<<<<<<<< End Evaluation <<<<<<<<<<<<<<<<<
