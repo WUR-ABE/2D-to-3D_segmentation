@@ -1,0 +1,17 @@
+# 
+# 3D POSE PARAMETERS: rotation and translation
+# 
+
+# Used representation type:
+f 0
+
+# Rotation angles [deg] or Rodriguez vector:
+r 305.717949688746 316.800865372539 317.440913044289
+
+# Translation vector (x y z [m]):
+t 0.857093221340878 -0.830449376057429 -0.526339149755669
+
+# 
+# HALCON Version 9.0 --  Thu May 27 17:31:19 2021
+
+# 
