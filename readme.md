@@ -54,14 +54,14 @@ If not, then download the dataset by hand using following [link](https://data.4t
 ## Run 2D-to-3D reprojection
 Following line will run the 2D to 3D reprojection method:
 ```
-python wurTomato.py --convert
+python wurTomato_inherit.py --convert
 ```
 
 ## Run 2Dto3D and point cept visualisation
 Following line will run the 2D to 3D reprojection method:
 ```
-python wurTomato.py --visualise_2dto3d
-python wurTomato.py --visualise_ptv3
+python wurTomato_inherit.py --visualise_2dto3d
+python wurTomato_inherit.py --visualise_ptv3
 ```
 
 

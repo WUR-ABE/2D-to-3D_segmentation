@@ -1,0 +1,28 @@
+maxi_marvin_code/.xdp*
+maxi_marvin_code/cam_cal
+maxi_marvin_code/Camera Positions MaxiMarvin
+maxi_marvin_code/test_data_b
+maxi_marvin_code/test_data_classification
+
+3DTomatoDataset*
+
+# python
+.vscode
+*.pyc
+logs
+__init__.py
+*.devcontainer
+*.vscode
+*.vscode-server
+cam_pos*
+
+*custom_voxel_carving.csv
+imgui.ini
+
+test.csv
+test.png
+
+.polyscope.ini
+
+
+debug/*

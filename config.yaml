@@ -1,0 +1,115 @@
+##config_file
+project_dir: TomatoWUR/data
+project_code: TomatoWUR
+# url: TODO
+
+data:
+  annot_version: 0-paper-2Dto3D
+  ann_dir: ${project_dir}/${project_code}/ann_versions/${data.annot_version}/annotations
+  img_dir: ${project_dir}/${project_code}/images/
+  pointcloud_dir: ${project_dir}/${project_code}/point_clouds/
+  camera_poses_dir: ${project_dir}/${project_code}/camera_poses/
+  json_split: test
+  json_path: ${project_dir}/${project_code}/ann_versions/${data.annot_version}/json/${data.json_split}.json
+
+run_mode: [skeletonization, evaluation] # or [skeletonization, evaluation]
+skeleton_method: xu
+
+root_method: circle_fit # center or bottom or line or pyransac3d, cylinderfit, circle_fit
+xu:
+  binratio: 20
+  n_neighbors: 20
+  # nodes2edges: xu # xu is build in implementatin of xu, geodesic or euclidean
+  nodes2edges: xu # xu is build in implementatin of xu, geodesic or euclidean
+
+evaluation:
+  evaluate_gt: False
+post_processing:
+  # methods: [f3]
+  methods: [f2, f3, f1, f2, f3, f4, f5, f2]
+  f1:
+    gaussian_smoothing:
+      var0: 0.25
+      var1: 0.25
+  f2:
+    filter:
+      node_order: 100000
+      keep_parents_only: True
+  f3: 
+    get_edge_type: 
+  f4: 
+    edge_from_filtered:
+  f5: 
+    line_fitting_3d:
+############ - 2D to 3D paper ##################
+run_paper_settings: false
+camera_scale_factor: 4
+reconstructe_complete_pc: true
+statistics_filtering: false
+subfilter_stick: false
+data_path: /local/marvin_testdata
+phd_experiment_name: ../output/
+cam_numbers: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+save_name_extension: .ply
+rgb_encoding: {
+    background: {
+        rgb_encoding: [
+            0,
+            0,
+            0
+        ],
+        class_id: 0
+    },
+    Leaf: {
+        rgb_encoding: [
+            255,
+            50,
+            50
+        ],
+        class_id: 1
+    },
+    Main stem: {
+        rgb_encoding: [
+            255,
+            225,
+            50
+        ],
+        class_id: 2
+    },
+    Pole: {
+        rgb_encoding: [
+            109,
+            255,
+            50
+        ],
+        class_id: 3
+    },
+    Pot: {
+        rgb_encoding: [
+            50,
+            255,
+            167
+        ],
+        class_id: 4
+    },
+    Side Stem: {
+        rgb_encoding: [
+            50,
+            167,
+            255
+        ],
+        class_id: 5
+    },
+    Small Side Stem: {
+        rgb_encoding: [
+            109,
+            50,
+            255
+        ],
+        class_id: 6
+    }
+}
+
+
+## Add gaussian filter (see plantscan3d)
+## Add post optimisation method (see stochastic optimization)
