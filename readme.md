@@ -103,3 +103,18 @@ This github would not be possible without open acces of several important librar
 - TomatoWUR dataset:      https://github.com/orgs/WUR-ABE/repositories/tomatowur
 
 For questions related to paper or code please send an email to bart.vanmarrewijk@wur.nl or open a git issue
+
+
+## Citation:
+```
+@article{VANMARREWIJK2025104147,
+title = {3D plant segmentation: Comparing a 2D-to-3D segmentation method with state-of-the-art 3D segmentation algorithms},
+journal = {Biosystems Engineering},
+volume = {254},
+pages = {104147},
+year = {2025},
+issn = {1537-5110},
+doi = {https://doi.org/10.1016/j.biosystemseng.2025.104147},
+url = {https://www.sciencedirect.com/science/article/pii/S1537511025000832},
+author = {Bart M. {van Marrewijk} and Tim {van Daalen} and Bolai Xin and Eldert J. {van Henten} and Gerrit Polder and Gert Kootstra}}
+```
