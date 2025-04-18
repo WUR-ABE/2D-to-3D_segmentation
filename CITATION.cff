@@ -1,0 +1,43 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+# title: 2D-to-3D segmentation
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Bart M.
+    family-names: van Marrewijk
+    email: bart.vanmarrewijk@wur.nl
+    affiliation: Wageningen University and Research
+    orcid: 'https://orcid.org/0000-0003-3681-8114'
+  - given-names: Tim
+    family-names: van Daalen
+    orcid: 'https://orcid.org/0009-0003-0308-1969'
+  - given-names: Bolai
+    family-names: Xin
+  - given-names: Eldert J.
+    family-names: van Henten
+    orcid: 'https://orcid.org/0000-0002-1623-9855'
+  - given-names: Gerrit
+    family-names: Polder
+    orcid: 'https://orcid.org/0000-0003-4896-4776'
+  - given-names: Gert
+    family-names: Kootstra
+    orcid: 'https://orcid.org/0000-0002-2579-4324'
+title: "3D plant segmentation: Comparing a 2D-to-3D segmentation method with state-of-the-art 3D segmentation algorithms"
+version: "2025"
+doi: "10.1016/j.biosystemseng.2025.104147"
+date-released: "2025"
+url: "https://www.sciencedirect.com/science/article/pii/S1537511025000832"
+keywords:
+    - "Segmentation"
+    - "Digital plant phenotyping"
+    - "3D point cloud"
+    - "Deep learning"
+    - "Horticulture"
+    - "Tomato plants"
+
+
