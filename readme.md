@@ -64,6 +64,14 @@ python wurTomato_inherit.py --visualise_2dto3d
 python wurTomato_inherit.py --visualise_ptv3
 ```
 
+## Run evaluation of experiment 1
+Following line will run the evaluation for ptv3 pretrained, swin3d pretrained and 2Dto3D:
+```
+python wurTomato_inherit.py --run_evaluation ptv3
+python wurTomato_inherit.py --run_evaluation swin3d
+python wurTomato_inherit.py --run_evaluation 2Dto3D
+```
+
 
 ## Voxel-carving / shape-from-silhouette
 In the paper the 3D point clouds are made using the MaxiMarvin setup in NPEC (Wageningen University and Research).
