@@ -10,10 +10,11 @@ Official implementation of the paper:
 # 3D tomato dataset
 
 
-This repo contains two items. 
+This repo contains four items. 
 1. A submodule related to the data of this paper. The class that can be used to visualize the TomatoWUR. The data will be automatically downloaded by running python wurTomato_inherit.py
 2. An example how to apply the 2D-to-3D reprojection method assuming that you already have segmented the images using Mask2Former for example.
 3. An example to use the dataset to train a 3D semantic segmentation algorithm using the pointcept git.  
+4. Results of experiment 1 to evaluate result of 2D-to-3D, swin3D and PTv3 method.
 
 <center>
     <p align="center">
@@ -33,25 +34,32 @@ cd 2D-to-3D_segmentation
 git submodule update --init --recursive
 ```
 
-** Data visualisation
-conda create --name 2dto3d python==
+**Data visualisation**
+```
+conda create --name 2dto3d python==3.9
+conda activate 2dto3d
+pip3 install -r TomatoWUR/requirements.txt
+```
 
-**Training
+**Training**
 For training we recommend the docker. Note that the visualisation does not work for devcontainer.
-Make sure your docker environment containts the nvidia docker to get acces to your gpu. It can take a up to 2 hours to install (because of flash attention installation is time intensive)
+Make sure your docker environment containts the nvidia docker to get acces to your gpu. It can take a up to 2 hours to install (Flash attention installation is time intensive)
 
 ```
 docker compose build
 ```
 
 ## Download and view dataset
-To download the dataset, run python wurTomato_inherit.py
+To download the dataset, run 
+```
+python wurTomato_inherit.py
+```
 
 If everything is correct a folder in the TomatoWUR git will be created.
-If not, then download the dataset by hand using following [link](https://data.4tu.nl/ndownloader/items/e2c59841-4653-45de-a75e-4994b2766a2f/versions/1). Create a folder named TomatoWUR/data/ and unzip results overhere.
+If not, then download the dataset by hand using following [link](https://data.4tu.nl/ndownloader/items/e2c59841-4653-45de-a75e-4994b2766a2f/versions/1). Create a folder named TomatoWUR/data/ and unzip results.
 
 
-## Run 2D-to-3D reprojection
+## Run 2Dto3D reprojection
 Following line will run the 2D to 3D reprojection method:
 ```
 python wurTomato_inherit.py --convert
