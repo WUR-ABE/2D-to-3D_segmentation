@@ -70,4 +70,4 @@ RUN cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30 /opt/conda/lib/
 RUN rm /opt/conda/lib/libstdc++.so.6
 RUN ln -s /opt/conda/lib/libstdc++.so.6.0.30 /opt/conda/lib/libstdc++.so.6
 RUN pip3 install datatable
-RUN pip3 install omegaconfs
+RUN pip3 install omegaconf
