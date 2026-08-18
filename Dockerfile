@@ -61,9 +61,9 @@ WORKDIR ../../..
 
 RUN pip3 install packaging
 RUN pip3 uninstall -y ninja && pip3 install ninja
-RUN pip3 install flash-attn --no-build-isolation
+RUN MAX_JOBS=4 pip3 install flash-attn==2.7.3 --no-build-isolation
 RUN pip3 install open3d
-RUN pip3 install umap-learn seaborn pandas numpy scikit-learn scikit-image matplotlib medmnist opencv-python
+RUN pip3 install umap-learn seaborn pandas numpy scikit-learn scikit-image matplotlib medmnist opencv-python==4.10.0.84
 RUN pip3 install natsort dijkstar
 ## error fix for datatable
 RUN cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30 /opt/conda/lib/
@@ -71,3 +71,10 @@ RUN rm /opt/conda/lib/libstdc++.so.6
 RUN ln -s /opt/conda/lib/libstdc++.so.6.0.30 /opt/conda/lib/libstdc++.so.6
 RUN pip3 install datatable
 RUN pip3 install omegaconf
+
+WORKDIR Pointcept/libs/Swin3D
+RUN TORCH_CUDA_ARCH_LIST="7.5 8.0 8.6 8.9" pip3 install ./
+WORKDIR ../../..
+## install minkowski
+RUN apt install libopenblas-dev -y
+RUN pip3 install -U git+https://github.com/NVIDIA/MinkowskiEngine --no-deps
